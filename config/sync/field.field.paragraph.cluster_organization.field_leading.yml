@@ -1,0 +1,23 @@
+uuid: 757078c1-664c-4c7e-a7f7-cad94611bde1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_leading
+    - paragraphs.paragraphs_type.cluster_organization
+id: paragraph.cluster_organization.field_leading
+field_name: field_leading
+entity_type: paragraph
+bundle: cluster_organization
+label: Leading
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'Is leading'
+  off_label: 'is not leading'
+field_type: boolean

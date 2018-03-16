@@ -1,0 +1,28 @@
+uuid: d38d515f-9ad4-4387-be8e-a8f4b18e6310
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_funder
+    - node.type.organization
+    - paragraphs.paragraphs_type.funding
+id: paragraph.funding.field_funder
+field_name: field_funder
+entity_type: paragraph
+bundle: funding
+label: Funder
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      organization: organization
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

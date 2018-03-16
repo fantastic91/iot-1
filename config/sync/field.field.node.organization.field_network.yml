@@ -1,0 +1,28 @@
+uuid: 9630a81f-aa2b-4577-8104-b15f99c25ac9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_network
+    - node.type.cluster
+    - node.type.organization
+id: node.organization.field_network
+field_name: field_network
+entity_type: node
+bundle: organization
+label: Network
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      cluster: cluster
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

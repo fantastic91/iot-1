@@ -1,0 +1,23 @@
+uuid: bc6b9648-9298-4514-8515-238d72747cd1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_amount
+    - paragraphs.paragraphs_type.funding
+id: paragraph.funding.field_amount
+field_name: field_amount
+entity_type: paragraph
+bundle: funding
+label: Amount
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: decimal

@@ -1,0 +1,23 @@
+uuid: a043f8f3-bbeb-4b05-b403-e291da1c053d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_testing_facilities_size
+    - node.type.cluster
+id: node.cluster.field_testing_facilities_size
+field_name: field_testing_facilities_size
+entity_type: node
+bundle: cluster
+label: 'Testing facilities size'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

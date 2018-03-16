@@ -1,0 +1,31 @@
+uuid: 8d345a0e-06ed-41c9-bc16-9e72b7c5d6cb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.empolyee.field_employee_number
+    - field.field.paragraph.empolyee.field_year
+    - paragraphs.paragraphs_type.empolyee
+id: paragraph.empolyee.default
+targetEntityType: paragraph
+bundle: empolyee
+mode: default
+content:
+  field_employee_number:
+    weight: 0
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_year:
+    weight: 1
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+hidden: {  }

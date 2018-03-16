@@ -1,0 +1,9 @@
+uuid: c49e2abc-9d58-4987-8997-6d330e2a0786
+langcode: en
+status: true
+dependencies: {  }
+id: address
+label: Address
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

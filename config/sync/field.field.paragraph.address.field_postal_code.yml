@@ -1,0 +1,23 @@
+uuid: aebfb643-2391-4811-80c7-a71003c9cd70
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_postal_code
+    - paragraphs.paragraphs_type.address
+id: paragraph.address.field_postal_code
+field_name: field_postal_code
+entity_type: paragraph
+bundle: address
+label: 'Postal code'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

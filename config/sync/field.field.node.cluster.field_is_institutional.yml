@@ -1,0 +1,23 @@
+uuid: 834fd625-f31f-4100-a2d1-558f54ba525d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_is_institutional
+    - node.type.cluster
+id: node.cluster.field_is_institutional
+field_name: field_is_institutional
+entity_type: node
+bundle: cluster
+label: 'Is institutional'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'Is institutional'
+  off_label: 'Is not institutional'
+field_type: boolean

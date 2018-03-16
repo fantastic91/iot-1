@@ -1,0 +1,19 @@
+uuid: 7e1d2a78-5fa0-4c30-8a9b-07b5d0fe5151
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_vat
+    - node.type.organization
+id: node.organization.field_vat
+field_name: field_vat
+entity_type: node
+bundle: organization
+label: VAT
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

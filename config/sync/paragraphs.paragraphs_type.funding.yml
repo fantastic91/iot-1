@@ -1,0 +1,9 @@
+uuid: 1b9bf684-15be-4946-b9be-dfc971335388
+langcode: en
+status: true
+dependencies: {  }
+id: funding
+label: Funding
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

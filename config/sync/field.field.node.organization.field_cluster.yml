@@ -1,0 +1,40 @@
+uuid: f63676e2-3618-4187-9fb8-23e3502fb2db
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_cluster
+    - node.type.organization
+    - paragraphs.paragraphs_type.cluster_organization
+  module:
+    - entity_reference_revisions
+id: node.organization.field_cluster
+field_name: field_cluster
+entity_type: node
+bundle: organization
+label: Cluster
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      cluster_organization: cluster_organization
+    target_bundles_drag_drop:
+      cluster_organization:
+        enabled: true
+        weight: 5
+      address:
+        weight: 6
+        enabled: false
+      empolyee:
+        weight: 7
+        enabled: false
+      funding:
+        weight: 8
+        enabled: false
+field_type: entity_reference_revisions

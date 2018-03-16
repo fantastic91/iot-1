@@ -1,0 +1,14 @@
+uuid: 981d5433-9f8f-47ab-bc06-832ddb283613
+name: 'Internet of Things innovation clusters in Europe'
+mail: nikolay.lobachev@gmail.com
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /node
+admin_compact_mode: false
+weight_select_max: 100
+langcode: en
+default_langcode: en
+_core:
+  default_config_hash: yXadRE77Va-G6dxhd2kPYapAvbnSvTF6hO4oXiOEynI

@@ -1,0 +1,42 @@
+uuid: d9b4b857-bfaa-4691-9a06-12473406630d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.address.field_address_info
+    - field.field.paragraph.address.field_country
+    - field.field.paragraph.address.field_postal_code
+    - paragraphs.paragraphs_type.address
+id: paragraph.address.default
+targetEntityType: paragraph
+bundle: address
+mode: default
+content:
+  field_address_info:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_country:
+    weight: 0
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_postal_code:
+    weight: 2
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

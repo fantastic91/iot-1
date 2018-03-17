@@ -1,0 +1,23 @@
+uuid: 71fc6cff-0e98-47ce-800d-65ce75f5a337
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_oe_text_long
+    - paragraphs.paragraphs_type.oe_rich_text
+  module:
+    - text
+_core:
+  default_config_hash: AnNzkuJzf1pcn5rbV7jmiG_4d3wfXfxRw9m7FfAT94Y
+id: paragraph.oe_rich_text.field_oe_text_long
+field_name: field_oe_text_long
+entity_type: paragraph
+bundle: oe_rich_text
+label: Text
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

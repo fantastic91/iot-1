@@ -1,0 +1,19 @@
+uuid: b6871bcc-2012-4689-8ec2-d08bd9c3d25a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_organization_source
+    - node.type.organization
+id: node.organization.field_organization_source
+field_name: field_organization_source
+entity_type: node
+bundle: organization
+label: 'Organization source'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

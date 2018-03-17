@@ -1,0 +1,9 @@
+uuid: 17a3eb79-17c5-475a-9ea7-90faf9d3a83b
+langcode: en
+status: true
+dependencies: {  }
+id: cluster_organization
+label: 'Cluster organization'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

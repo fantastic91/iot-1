@@ -1,0 +1,19 @@
+uuid: a7c13c40-dedf-4aec-b9c3-c1918de1440d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_facilities
+    - node.type.cluster
+id: node.cluster.field_facilities
+field_name: field_facilities
+entity_type: node
+bundle: cluster
+label: Facilities
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

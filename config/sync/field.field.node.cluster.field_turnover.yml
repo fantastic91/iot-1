@@ -1,0 +1,23 @@
+uuid: 0089af3b-02dc-4b9d-90a2-2001ebd49abf
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_turnover
+    - node.type.cluster
+id: node.cluster.field_turnover
+field_name: field_turnover
+entity_type: node
+bundle: cluster
+label: Turnover
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: decimal

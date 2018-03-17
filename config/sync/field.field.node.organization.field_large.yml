@@ -1,0 +1,28 @@
+uuid: fd36f863-5b96-485e-a288-9a2399b4de4a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_large
+    - node.type.cluster
+    - node.type.organization
+id: node.organization.field_large
+field_name: field_large
+entity_type: node
+bundle: organization
+label: Large
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      cluster: cluster
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

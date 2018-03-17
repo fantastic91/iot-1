@@ -1,0 +1,35 @@
+uuid: 47b5397e-2ab7-4901-a0aa-913c0c7f8683
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.oe_rich_text.field_oe_text_long
+    - paragraphs.paragraphs_type.oe_rich_text
+  module:
+    - content_moderation
+    - text
+_core:
+  default_config_hash: e8EcxSWoWVhTn-tDNNP_ubkaD0LyXXRL5fbvdZS4aKY
+id: paragraph.oe_rich_text.default
+targetEntityType: paragraph
+bundle: oe_rich_text
+mode: default
+content:
+  field_oe_text_long:
+    weight: 0
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  moderation_state:
+    type: moderation_state_default
+    weight: 100
+    settings: {  }
+    region: content
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true
+  uid: true

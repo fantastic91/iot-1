@@ -1,0 +1,24 @@
+uuid: 9d19b129-1129-4320-9a11-042f180254d0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.oe_rich_text.field_oe_text_long
+    - paragraphs.paragraphs_type.oe_rich_text
+  module:
+    - text
+_core:
+  default_config_hash: 8dYpGh6-101tESyrN63FE_cQRVJI8M5KQTSuhmzxsV8
+id: paragraph.oe_rich_text.default
+targetEntityType: paragraph
+bundle: oe_rich_text
+mode: default
+content:
+  field_oe_text_long:
+    weight: 0
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+hidden: {  }

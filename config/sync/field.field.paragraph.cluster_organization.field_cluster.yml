@@ -1,0 +1,28 @@
+uuid: e7429cef-ffcb-4f9f-9342-f277f5625717
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_cluster
+    - node.type.cluster
+    - paragraphs.paragraphs_type.cluster_organization
+id: paragraph.cluster_organization.field_cluster
+field_name: field_cluster
+entity_type: paragraph
+bundle: cluster_organization
+label: Cluster
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      cluster: cluster
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

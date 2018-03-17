@@ -1,0 +1,11 @@
+uuid: cdd5aa69-03f5-4972-bc3a-4f1b299402df
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: bzabXxDe8ZOK7HByK-uYFEYGhmqN3T4aBuehUKLOFJ0
+id: oe_rich_text
+label: 'Rich text'
+icon_uuid: null
+description: 'A simple paragraph containing rich text.'
+behavior_plugins: {  }

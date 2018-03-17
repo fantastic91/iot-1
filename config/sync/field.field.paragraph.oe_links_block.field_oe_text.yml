@@ -1,0 +1,21 @@
+uuid: 8fb37038-dc0b-46cc-a334-ff77b0fdd7a0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_oe_text
+    - paragraphs.paragraphs_type.oe_links_block
+_core:
+  default_config_hash: UBA9ssb89TAF0_5qqGgQDxd2hDCpqT68uRL3PkniaIk
+id: paragraph.oe_links_block.field_oe_text
+field_name: field_oe_text
+entity_type: paragraph
+bundle: oe_links_block
+label: Title
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

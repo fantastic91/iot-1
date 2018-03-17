@@ -1,0 +1,9 @@
+uuid: c20e0a0c-be8b-40ff-9909-bd383d740f7a
+langcode: en
+status: true
+dependencies: {  }
+name: 'Cluster service'
+vid: cluster_service
+description: 'Service of the cluster'
+hierarchy: 0
+weight: 0

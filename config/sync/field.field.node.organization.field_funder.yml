@@ -1,0 +1,34 @@
+uuid: 618ba731-9d9d-4ae5-aac2-7e7ed87a230f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_funder
+    - node.type.organization
+    - paragraphs.paragraphs_type.funding
+  module:
+    - entity_reference_revisions
+id: node.organization.field_funder
+field_name: field_funder
+entity_type: node
+bundle: organization
+label: Funder
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      funding: funding
+    target_bundles_drag_drop:
+      funding:
+        enabled: true
+        weight: 3
+      empolyee:
+        weight: 4
+        enabled: false
+field_type: entity_reference_revisions

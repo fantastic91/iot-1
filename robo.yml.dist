@@ -3,6 +3,7 @@ project:
   root: /var/www/html/
   url: http://localhost
   environment: development
+  oe_theme: web/themes/contrib/oe_theme
 
 # Site information.
 site:

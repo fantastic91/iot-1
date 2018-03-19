@@ -1,17 +1,17 @@
-uuid: 9f8e221b-e265-4c22-ab71-04e138f63510
+uuid: ebd0f998-0cf3-4c76-aa37-48da695140fa
 langcode: en
 status: true
 dependencies:
   module:
     - system
   theme:
-    - bartik
+    - oe_theme
 _core:
-  default_config_hash: 9EoWV2Lot6FVSr50t4hoKgiz1LIXYWNG-IIPYsWxBqo
-id: bartik_content
-theme: bartik
+  default_config_hash: '-d03U8iQFWFSM_KnLXP_dMC-9-QI5FJ-js-siIV0Zbw'
+id: oe_theme_main_page_content
+theme: oe_theme
 region: content
-weight: 0
+weight: 2
 provider: null
 plugin: system_main_block
 settings:

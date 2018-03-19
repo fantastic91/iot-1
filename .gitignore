@@ -38,3 +38,8 @@
 
 # DB backups
 /backup
+
+
+# npm
+node_modules/
+npm-debug.log

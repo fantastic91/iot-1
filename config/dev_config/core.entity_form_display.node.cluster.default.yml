@@ -1,38 +1,40 @@
-uuid: 1056df7d-7698-4e39-a963-00700f12bd2e
+uuid: 40fe8a02-c5c3-4ee8-b86c-51485c37eb7e
 langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.organization.body
-    - field.field.node.organization.field_address
-    - field.field.node.organization.field_cluster
-    - field.field.node.organization.field_employment
-    - field.field.node.organization.field_foundation_year
-    - field.field.node.organization.field_funder
-    - field.field.node.organization.field_large
-    - field.field.node.organization.field_network
-    - field.field.node.organization.field_organization_source
-    - field.field.node.organization.field_organization_type
-    - field.field.node.organization.field_short_name
-    - field.field.node.organization.field_tags
-    - field.field.node.organization.field_turnover
-    - field.field.node.organization.field_url
-    - field.field.node.organization.field_vat
-    - node.type.organization
+    - field.field.node.cluster.body
+    - field.field.node.cluster.field_address
+    - field.field.node.cluster.field_cluster_composition
+    - field.field.node.cluster.field_cluster_service
+    - field.field.node.cluster.field_cluster_source
+    - field.field.node.cluster.field_cluster_structure
+    - field.field.node.cluster.field_cluster_type
+    - field.field.node.cluster.field_emloyees
+    - field.field.node.cluster.field_enterprise_number
+    - field.field.node.cluster.field_facilities
+    - field.field.node.cluster.field_is_institutional
+    - field.field.node.cluster.field_management
+    - field.field.node.cluster.field_office_size
+    - field.field.node.cluster.field_startup_numer
+    - field.field.node.cluster.field_tags
+    - field.field.node.cluster.field_testing_facilities_size
+    - field.field.node.cluster.field_turnover
+    - field.field.node.cluster.field_url
+    - node.type.cluster
   module:
-    - datetime
     - link
     - paragraphs
     - path
     - text
-id: node.organization.default
+id: node.cluster.default
 targetEntityType: node
-bundle: organization
+bundle: cluster
 mode: default
 content:
   body:
     type: text_textarea_with_summary
-    weight: 3
+    weight: 1
     settings:
       rows: 9
       summary_rows: 3
@@ -41,13 +43,12 @@ content:
     region: content
   created:
     type: datetime_timestamp
-    weight: 17
+    weight: 23
     region: content
     settings: {  }
     third_party_settings: {  }
   field_address:
-    type: entity_reference_paragraphs
-    weight: 5
+    weight: 9
     settings:
       title: Paragraph
       title_plural: Paragraphs
@@ -56,51 +57,10 @@ content:
       form_display_mode: default
       default_paragraph_type: ''
     third_party_settings: {  }
-    region: content
-  field_cluster:
     type: entity_reference_paragraphs
-    weight: 13
-    settings:
-      title: Paragraph
-      title_plural: Paragraphs
-      edit_mode: open
-      add_mode: dropdown
-      form_display_mode: default
-      default_paragraph_type: ''
-    third_party_settings: {  }
     region: content
-  field_employment:
-    type: entity_reference_paragraphs
-    weight: 7
-    settings:
-      title: Paragraph
-      title_plural: Paragraphs
-      edit_mode: open
-      add_mode: dropdown
-      form_display_mode: default
-      default_paragraph_type: ''
-    third_party_settings: {  }
-    region: content
-  field_foundation_year:
+  field_cluster_composition:
     weight: 6
-    settings: {  }
-    third_party_settings: {  }
-    type: datetime_default
-    region: content
-  field_funder:
-    type: entity_reference_paragraphs
-    weight: 10
-    settings:
-      title: Paragraph
-      title_plural: Paragraphs
-      edit_mode: open
-      add_mode: dropdown
-      form_display_mode: default
-      default_paragraph_type: ''
-    third_party_settings: {  }
-    region: content
-  field_large:
-    weight: 11
     settings:
       match_operator: CONTAINS
       size: 60
@@ -108,8 +68,8 @@ content:
     third_party_settings: {  }
     type: entity_reference_autocomplete
     region: content
-  field_network:
-    weight: 12
+  field_cluster_service:
+    weight: 4
     settings:
       match_operator: CONTAINS
       size: 60
@@ -117,16 +77,16 @@ content:
     third_party_settings: {  }
     type: entity_reference_autocomplete
     region: content
-  field_organization_source:
-    weight: 15
+  field_cluster_source:
+    weight: 7
     settings:
       rows: 5
       placeholder: ''
     third_party_settings: {  }
     type: string_textarea
     region: content
-  field_organization_type:
-    weight: 9
+  field_cluster_structure:
+    weight: 5
     settings:
       match_operator: CONTAINS
       size: 60
@@ -134,16 +94,73 @@ content:
     third_party_settings: {  }
     type: entity_reference_autocomplete
     region: content
-  field_short_name:
-    weight: 1
+  field_cluster_type:
+    weight: 3
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_emloyees:
+    type: entity_reference_paragraphs
+    weight: 17
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    region: content
+  field_enterprise_number:
+    weight: 15
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_facilities:
+    weight: 10
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
     type: string_textfield
     region: content
-  field_tags:
+  field_is_institutional:
+    weight: 2
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  field_management:
+    weight: 13
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textarea
+    region: content
+  field_office_size:
+    weight: 11
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_startup_numer:
     weight: 14
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_tags:
+    weight: 18
     settings:
       match_operator: CONTAINS
       size: 60
@@ -151,29 +168,34 @@ content:
     third_party_settings: {  }
     type: entity_reference_autocomplete
     region: content
+  field_testing_facilities_size:
+    weight: 12
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
   field_turnover:
-    weight: 8
+    weight: 16
     settings:
       placeholder: ''
     third_party_settings: {  }
     type: number
     region: content
   field_url:
-    weight: 4
+    weight: 8
     settings:
       placeholder_url: ''
       placeholder_title: ''
     third_party_settings: {  }
     type: link_default
     region: content
-  field_vat:
-    weight: 2
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    type: string_textfield
+  moderation_state:
+    type: moderation_state_default
+    weight: 100
+    settings: {  }
     region: content
+    third_party_settings: {  }
   path:
     type: path
     weight: 20
@@ -184,21 +206,21 @@ content:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 18
+    weight: 22
     region: content
     third_party_settings: {  }
   status:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 21
+    weight: 24
     region: content
     third_party_settings: {  }
   sticky:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 19
+    weight: 21
     region: content
     third_party_settings: {  }
   title:
@@ -211,11 +233,14 @@ content:
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
-    weight: 16
+    weight: 19
     settings:
       match_operator: CONTAINS
       size: 60
       placeholder: ''
     region: content
     third_party_settings: {  }
+  url_redirects:
+    weight: 50
+    region: content
 hidden: {  }

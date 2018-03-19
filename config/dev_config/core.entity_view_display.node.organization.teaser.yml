@@ -25,4 +25,18 @@ content:
   links:
     weight: 100
     region: content
-hidden: {  }
+hidden:
+  field_address: true
+  field_cluster: true
+  field_employment: true
+  field_foundation_year: true
+  field_funder: true
+  field_large: true
+  field_network: true
+  field_organization_source: true
+  field_organization_type: true
+  field_short_name: true
+  field_tags: true
+  field_turnover: true
+  field_url: true
+  field_vat: true

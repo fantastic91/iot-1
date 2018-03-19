@@ -833,4 +833,5 @@ $local_settings_file = $app_root . '/' . $site_path . '/settings.local.php';
 if (file_exists($local_settings_file)) {
   include $local_settings_file;
 }
+
 $settings['install_profile'] = 'standard';
